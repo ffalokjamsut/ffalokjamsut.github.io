@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Tiktok-shop</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous"
+        />
+        <style type="text/css" media="all">
+            .box {
+                width: 97%;
+                height: auto;
+                padding: 5px;
+                background-color: #fcf6ff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .button {
+                width: 98%;
+                height: 40px;
+                background-color: darkblue;
+                color: white;
+                border: none;
+                margin: 2px;
+                border-radius: 5px;
+            }
+
+            .button:hover {
+                color: salmon;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="nav.png" alt="navbar" width="100" height="30" />
+                </a>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <img
+                src="jumbotron.png"
+                class="rounded mx-auto d-block"
+                alt="jumbotron"
+                width="130"
+                height="130"
+            />
+            <div class="box mt-5 mx-auto">
+                <button class="button" onclick="next()">Ajukan Banding</button>
+                <button class="button" onclick="next()">
+                    Hapus Rekaman Pelanggaran
+                </button>
+                <button class="button" onclick="next()">
+                    Masalah Pengiriman
+                </button>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" charset="utf-8">
+            const next = () => {
+                window.location.href = "idbanding.html";
+            };
+        </script>
+    </body>
+</html>
